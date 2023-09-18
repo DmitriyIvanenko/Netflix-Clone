@@ -21,8 +21,10 @@ class APICaller {
             guard let data = data, error == nil else {return}
             
             do {
-                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(results)
+//                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+//                print(results)
+                let results = try JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
+                print(results.results[0].original_title)
             } catch {
                 print(error.localizedDescription )
             }
