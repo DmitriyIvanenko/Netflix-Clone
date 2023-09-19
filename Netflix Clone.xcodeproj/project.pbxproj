@@ -72,7 +72,6 @@
 		6162384D2A7B904400FE2135 /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
-				616805752AB05337004DC58D /* Extensions */,
 				6162386F2A8A614C00FE2135 /* Managers */,
 				6162386E2A8A613E00FE2135 /* Resources */,
 				6162386C2A8A610400FE2135 /* Models */,
@@ -127,6 +126,7 @@
 		6162386E2A8A613E00FE2135 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				616805762AB05360004DC58D /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,14 +137,6 @@
 				6186C3072AB448F900C8FEB0 /* APICaller.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		616805752AB05337004DC58D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				616805762AB05360004DC58D /* Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

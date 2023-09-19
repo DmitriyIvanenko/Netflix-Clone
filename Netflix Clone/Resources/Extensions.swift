@@ -18,3 +18,9 @@ extension UIImage {
         return image.withRenderingMode(self.renderingMode)
     }
 }
+
+extension String {
+    func capitalizefirstLetter() -> String {
+        return self.prefix(1).uppercased() + self.lowercased().dropFirst()
+    }
+}
