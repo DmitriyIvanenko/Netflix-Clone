@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610D6EE02ABB1FD00012DC20 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D6EDF2ABB1FD00012DC20 /* TitleCollectionViewCell.swift */; };
 		6116CD682AB8732D0035EBDE /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CD672AB8732D0035EBDE /* Title.swift */; };
 		6162384F2A7B904400FE2135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162384E2A7B904400FE2135 /* AppDelegate.swift */; };
 		616238512A7B904400FE2135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616238502A7B904400FE2135 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610D6EDF2ABB1FD00012DC20 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		6116CD672AB8732D0035EBDE /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		6162384B2A7B904400FE2135 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6162384E2A7B904400FE2135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				616238702A8A618F00FE2135 /* CollectionViewTableViewCell.swift */,
 				616238722A8CDEA900FE2135 /* HeroHeaderUIView.swift */,
+				610D6EDF2ABB1FD00012DC20 /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				616238682A7BA8DB00FE2135 /* SearchViewController.swift in Sources */,
+				610D6EE02ABB1FD00012DC20 /* TitleCollectionViewCell.swift in Sources */,
 				616238532A7B904400FE2135 /* MainTabBarViewController.swift in Sources */,
 				616238712A8A618F00FE2135 /* CollectionViewTableViewCell.swift in Sources */,
 				616238732A8CDEA900FE2135 /* HeroHeaderUIView.swift in Sources */,
