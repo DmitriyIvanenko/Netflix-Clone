@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
     private func configureNavbar() {
         
         let image = UIImage(named: "logo")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal).resizeTo(size: CGSize(width: 25, height: 25))
-       
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
         
         navigationItem.rightBarButtonItems = [
@@ -53,16 +53,37 @@ class HomeViewController: UIViewController {
     }
     
     private func fetchData() {
-//        APICaller.shared.getTrandinMovies { results in
-//            switch results {
-//            case .success(let movies):
-//                print(movies)
-//            case .failure(let error):
-//                print(error)
+        
+                APICaller.shared.getTrandinMovies { results in
+                    switch results {
+                    case .success(let movies):
+                        print(movies)
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+        
+        
+//             APICaller.shared.getTrandinMovies { _ in
+//                    //
+//             }
+        
+//            APICaller.shared.getTrandingTVs { _ in
+//                //
 //            }
+
+        
+//             APICaller.shared.getUpcommingMovies { _ in
+//                        //
+//             }
+
+//        APICaller.shared.getPopular { _ in
+//            //
 //        }
+        
+        
     }
- 
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
