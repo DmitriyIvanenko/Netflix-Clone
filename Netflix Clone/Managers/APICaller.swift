@@ -58,7 +58,7 @@ class APICaller {
     
     //  getUpcommingMovis   https://api.themoviedb.org/3/movie/upcoming?api_key=c78a618441d0a394e2bf591b2d436875&language=en-US&page=1
     
-    func getUpcommingMovies (comletion: @escaping (Result<[Title], Error>) -> Void) {
+    func getUpcomingMovies (comletion: @escaping (Result<[Title], Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)/3/movie/upcoming?api_key=\(Constants.API_KEY)&language=en-US&page=1") else {return}
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else {return}
